@@ -16,8 +16,8 @@ public class classEx {
         System.out.println(j3.city);
 
         studentPrint.hello(j3.firstName);
-        j3.mobile();
         j3.hello(j3.lastName);
+        j3.mobile();
 
     }
 }
