@@ -1,0 +1,9 @@
+Types of inheritance
+
+*single-level
+class A <--- class B (extend)
+interface A <--- interface B (extend)
+interface A <--- class B (extend)
+
+*Multi-level
+class A <--- class B <--- class C

@@ -1,22 +1,34 @@
 package testSets;
-
-import java.util.Scanner;
+import java.sql.*;
 
 public class arrTest2 {
-    public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-
-        System.out.println("enter length of arr");
-        int n = sc.nextInt();
-
-        int[] arr= new int[n];
-
-        for(int i=0; i<arr.length; i++){
-            arr[i] = sc.nextInt();
+    public static String main(String[] args) throws Exception {
+        String randomId;
+        while (true) {
+            randomId = String.valueOf(ranNum());
+            if (!checkUniqeId(randomId)) {
+                break;
+            }
         }
-
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
-        }
+        return randomId;
+//        System.out.println(randomId);
     }
+
+    public static boolean checkUniqeId(String randomId) throws Exception {
+        boolean flag = false;
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/librarymanagmentpro", "root", "root");
+            PreparedStatement ps = con.prepareStatement("SELECT * FROM userdetails where orgID=?");
+            ps.setString(1, randomId);
+            ResultSet rs = ps.executeQuery();
+            flag = rs.next();
+            con.close();
+        return flag;
+    }
+
+    public static int ranNum() {
+        double x = Math.floor(Math.random() * 90000) + 10000;
+        int y = (int) (x);
+        return y;
+    }
+
 }

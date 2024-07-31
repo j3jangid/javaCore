@@ -14,7 +14,7 @@ public class ThreadsClass {
 
 
         System.out.println(w1.getPriority()+" is w1's Priority");
-        System.out.println(Thread.currentThread().getName() + " is name of the main Method Thread");
+        System.out.println(Thread.currentThread().getName() + " is name of the cid Method Thread");
     }
 }
 

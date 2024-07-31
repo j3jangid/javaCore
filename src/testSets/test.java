@@ -60,6 +60,12 @@ public class test {
             System.out.println(asd.indexOf("String"));
 
 
+            for (int i = 0; i < 1000; i++) {
+                int r = (int)(Math.random() * 90000)+10000;
+                System.out.println(r);
+            }
+
+
 
 
 

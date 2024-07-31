@@ -1,6 +1,6 @@
 package toStringMethod;
 
-import javax.xml.bind.annotation.XmlType;
+//import javax.xml.bind.annotation.XmlType;
 
 public class toStringCheck {
     public static void main(String[] args) {

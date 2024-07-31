@@ -23,12 +23,14 @@ public class Jdbc {
 
 //            to Get Data Form DB
             ResultSet res = stat.executeQuery("select * from basic");
+            System.out.println("res.next() : "+res.next());
             while (res.next()){
                 System.out.print(res.getInt(1)+" - ");
                 System.out.print(res.getString(2)+" - ");
                 System.out.print(res.getString(3));
                 System.out.println("");
             }
+            System.out.println("res.next() : "+res.next());
 
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);

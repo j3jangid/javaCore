@@ -24,7 +24,7 @@ public class arrFunction1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("test for array method");
-        System.out.println("Enter how many index you want in array");
+        System.out.println("Enter how many Index you want in array");
         int y = sc.nextInt();
         printArr(buildArr(y));
 
