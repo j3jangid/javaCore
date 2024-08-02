@@ -7,3 +7,15 @@ interface A <--- class B (extend)
 
 *Multi-level
 class A <--- class B <--- class C
+
+*Multi-Inheritance
+class B<---classA--->classC
+Java Dose not support Multiple inheritance through the ____ but it supported by interface
+Ambiguity Error--
+multiple class can have same method with different bodies,
+
+*Hierarchical Inheritance
+
+*Hybrid Inheritance
+java dose not support because it has Multi-Inheritance
+
