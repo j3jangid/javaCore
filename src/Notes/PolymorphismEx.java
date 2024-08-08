@@ -2,6 +2,9 @@ package Notes;
 
 // Compile time Polymorphism = method overloading
 // Run time Polymorphism = method overriding
+// required - class and Object
+//            inheritance (is a relationship)
+//            method overriding
 
 public class PolymorphismEx {
     public static void main(String[] args) {
